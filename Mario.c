@@ -11,7 +11,7 @@ int main(void)
     row(get_int);
 }
 
-//gettting user input
+// getting user input
 
 int get_positive_num(void)
 {
