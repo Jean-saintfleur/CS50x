@@ -11,14 +11,14 @@ int main(void)
     row(get_int);
 }
 
-// getting user input
+//gettting user input
 
 int get_positive_num(void)
 {
   int num;
   do
   {
-    num = get_int("Choose a number: ");
+    num = get_int("Height: ");
   }
   while (num < 1);
   return num;
@@ -30,7 +30,14 @@ void row(int n)
 {
     for (int row = 0; row < n; row++)
     {
-      for (int col = 0; col < row; col++)
+
+      //Priting space to reverse pyramid
+      for (int space = 0; space < n - row -1; space++)
+      {
+        printf(" ");
+      }
+
+      for (int col = 0; col <= row; col++)
       {
         printf("#");
       }
